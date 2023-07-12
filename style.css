@@ -1,0 +1,272 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #682C20;
+    position: fixed;
+    padding-left: 30rem; 
+}
+
+.cardapio-logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cardapio-logo img {
+    width: 90%;
+    height: 80%;
+    border-radius: 80%;
+}
+
+.cardapio-logo h3 {
+    color: #FFFCDF;
+    font-size: 1.8rem;
+}
+
+.content .cardapio-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .cardapio-menu li a:hover {
+    color: #F6B818;
+}
+
+.content .cardapio-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: #FFFCDF;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.first-box {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),url(assets/backgroundpizza.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-box .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.first-box h1 {
+     color: #F6B818;
+     font-size: 6rem;
+     text-transform: uppercase;
+     margin-bottom: 1rem;
+}
+
+.first-box h2 {
+    color: #FFFCDF;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.botao {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao button{
+width: 230px;
+height: 60px;
+cursor: pointer;
+text-transform: uppercase;
+background-color: #E0993F;
+border-radius: 10px;
+color: #FFFCDF;
+font-weight: 700;
+margin-top: 5rem;
+transition: all 300ms ease-in;
+}
+
+.botao button:hover {
+    border: 1px solid #E0993F;
+    background-color: transparent;
+    color: #E0993F;
+}
+/* CARDAPIO */
+
+.menu {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(105, 45, 32, 0.8);
+
+}
+
+.menu h2 {
+    padding: 20px;
+    font-size: 4rem;
+    color: #FFFCDF;
+    text-transform: uppercase;
+}
+
+.menu-items {
+    width: 70vw;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-items div {
+    background-color: #E0993F;
+    box-shadow: 0 0 4px 1px;
+}
+
+.menu-items img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-items .info {
+    background-color: #FFFCDF;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.menu-items h3 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.menu-items h4 { 
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.menu-items h4 span {
+    font-size: 1.6rem;
+    color: #E0993F;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.menu-items .info .add {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #F6B818;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #682C20;
+    font-weight: bold;
+    transition: all 150ms ease-in;
+}
+
+.menu-items .info .add:hover {
+    background-color: #682C20;
+    color: #FFFCDF;
+}
+
+
+/* SOBRE NÓS */
+.about-us {
+    background-color: #682C20;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #FFFCDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid #FFFCDF;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentabout h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentabout p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+footer {
+    height: 25px;
+    background-color: #481f17;
+    color: #FFFCDF;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
